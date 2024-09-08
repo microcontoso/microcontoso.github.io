@@ -36,3 +36,11 @@ transform:scale(1.05);
 opacity:1;
 filter:alpha(opacity=100);
 }
+
+.zoomable-image {
+    transition: transform 0.3s ease; 
+  }
+   
+  .zoomable-image:hover {
+    transform: scale(1.03);
+  }
