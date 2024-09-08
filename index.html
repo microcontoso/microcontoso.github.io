@@ -118,7 +118,14 @@ D:.
       <div class="col-md-6 order-md-first p-5">
 <!--        img block-->
 <!--        <img src="img/osd.png" class="img-fluid img-thumbnail">-->
-        <pre><code class="powershell">Get-DhcpServerv4OptionValue -ScopeId 10.10.20.0
+        <pre><code class="powershell">Get-WdsBootImage
+
+Architecture            : X64
+Description             : Lite Touch Windows PE (x64)
+Enabled                 : True
+FileName                : LiteTouchPE_x64.wim
+
+Get-DhcpServerv4OptionValue -ScopeId 10.10.20.0
 
 OptionId Name                  Type        Value
 -------- ----                  ----        -----
