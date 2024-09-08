@@ -7,14 +7,19 @@
     <link rel="icon" type="image/x-icon" href="img/mc.ico">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- hightlights css -->
+    <link rel="stylesheet" href="css/monokai.css">
     <!-- user defined css -->
     <link rel="stylesheet" href="css/delta.css">
     <!-- bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
     <!-- typed js -->
     <script src="js/typed.umd.js"></script>
+    <!-- hightlights js -->
+    <script src="js/highlight.min.js"></script>
     <!-- user defined js -->
     <script src="js/delta.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body>
@@ -49,7 +54,20 @@
         <p class="lead text-muted">&#9745 一台域控服务器可以创建约21.5亿个对象</p>
       </div>
       <div class="col-md-6 order-md-first p-5">
-        <img src="img/ad.jpg" class="img-fluid img-thumbnail">
+<!--        img block-->
+<!--        <img src="img/ad.jpg" class="img-fluid img-thumbnail">-->
+          <pre><code class="powershell">Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+
+Success Restart Needed Exit Code     Feature Result
+------- -------------- ---------     --------------
+True    No             Success       {Active Directory ...
+
+Get-Command Install-ADDSForest
+
+CommandType     Name                 Source
+-----------     ----                 ------
+Cmdlet          Install-ADDSForest   ADDSDeployment
+</code></pre>
       </div>
     </div>
   </div>
@@ -66,7 +84,22 @@
         <p class="lead text-muted">&#9745 基于AD组授权</p>
       </div>
       <div class="col-md-6 p-5">
-        <img src="img/fs.jpg" class="img-fluid img-thumbnail">
+<!--        img block-->
+<!--        <img src="img/fs.jpg" class="img-fluid img-thumbnail">-->
+        <pre><code class="powershell">PS D:\share> tree
+
+Folder PATH listing for volume Local Disk
+Volume serial number is 3253-E254
+D:.
++---Department
+¦   +---Finance
+¦   +---HR
+¦   +---IT
++---Public
+    +---Finance
+    +---HR
+    +---IT
+</code></pre>
       </div>
     </div>
   </div>
@@ -83,7 +116,17 @@
         <p class="lead text-muted">&#9745 Microsoft Deployment Toolkit (MDT)</p>
       </div>
       <div class="col-md-6 order-md-first p-5">
-        <img src="img/osd.png" class="img-fluid img-thumbnail">
+<!--        img block-->
+<!--        <img src="img/osd.png" class="img-fluid img-thumbnail">-->
+        <pre><code class="powershell">Get-DhcpServerv4OptionValue -ScopeId 10.10.20.0
+
+OptionId Name                  Type        Value
+-------- ----                  ----        -----
+51       Lease                 DWord       {86400}
+3        Router                IPv4Address {10.10.20.1}
+6        DNS Servers           IPv4Address {10.10.10.10, 10.10.10.11}
+66       Boot Server Host Name String      {10.10.20.20}
+</code></pre>
       </div>
     </div>
   </div>
@@ -99,19 +142,19 @@
     </div>
     <div class="row mb-3">
       <div class="col text-center text-muted">
-        <img src="img/gaohui.jpeg" width=140px, height=140px, class="rounded-circle mt-3">
+        <img src="img/gaohui.png" width=140px, height=140px, class="rounded-circle mt-3">
         <h5 class="fw-normal mt-3">Gao Hui</h5>
       </div>
       <div class="col text-center text-muted">
-        <img src="img/lintao.jpeg" width=140px, height=140px, class="rounded-circle mt-3">
+        <img src="img/lintao.png" width=140px, height=140px, class="rounded-circle mt-3">
         <h5 class="fw-normal mt-3">Lin Tao</h5>
       </div>
       <div class="col text-center text-muted">
-        <img src="img/hanmeimei.jpeg" width=140px, height=140px, class="rounded-circle mt-3">
+        <img src="img/hanmeimei.png" width=140px, height=140px, class="rounded-circle mt-3">
         <h5 class="fw-normal mt-3">Han Meimei</h5>
       </div>
       <div class="col text-center text-muted">
-        <img src="img/lilei.jpeg" width=140px, height=140px, class="rounded-circle mt-3">
+        <img src="img/lilei.png" width=140px, height=140px, class="rounded-circle mt-3">
         <h5 class="fw-normal mt-3">Li Lei</h5>
       </div>
     </div>
@@ -126,13 +169,13 @@
         Bootstrap是一个简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。
         V5版本支持Flexbox布局 / Grid布局 / CSS自定义属性，不依赖 jQuery。
       </p>
-      <button type="button" class="btn btn-outline-secondary btn-sm btn-lg px-4 me-sm-3 fw-bold"><a href="https://github.com/microcontoso/microcontoso.github.io" target="_blank" class="nav-link p-1 text-body-secondary">本站代码</a></button>
+      <button type="button" class="btn btn-outline-secondary btn-sm btn-lg px-4 me-sm-3 fw-bold"><a href="https://getbootstrap.com" target="_blank" class="nav-link p-1 text-body-secondary">Bootstrap</a></button>
     </div>
   </div>
 </section>
 
 <!-- section: Blockquotes -->
-<section class="p-2 bg-body-tertiary mt-5">
+<section class="p-3 bg-body-tertiary mt-5">
   <div class="container mt-3">
     <figure>
       <blockquote class="blockquote">
