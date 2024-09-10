@@ -17,6 +17,10 @@
     <script src="js/typed.umd.js"></script>
     <!-- hightlights js -->
     <script src="js/highlight.min.js"></script>
+    <!-- highcharts js -->
+    <script src="js/highcharts.js"></script>
+    <!-- wordcloud js -->
+    <script src="js/wordcloud.js"></script>
     <!-- user defined js -->
     <script src="js/delta.js"></script>
     <script>hljs.highlightAll();</script>
@@ -211,6 +215,44 @@ OptionId Name                  Type        Value
           loop: true,
       });
   </script>
+</section>
+
+<!-- section: word cloud -->
+<section class="p-2 mt-3">
+  <div class="container">
+    <div class="row align-items-center">
+      <div id="wordcloud" class="col-md-12">
+        <script>
+          var text = 'sme active directory domain controller pdc time ou group policy  zone powerShell wsus dhcp file share wds mdt dns bootp treesize outlook vscode forest site netdom query fsmo rid adk schema gc get-help';
+          var data = text.split(/[,\. ]+/g)
+          .reduce(function (arr, word) {
+              var obj = arr.find(function (obj) {
+                  return obj.name === word;
+              });
+              if (obj) {
+                  obj.weight += 1;
+              } else {
+                  obj = {
+                      name: word,
+                      weight: 1
+                  };
+                  arr.push(obj);
+              }
+              return arr;
+          }, []);
+          Highcharts.chart('wordcloud', {
+              series: [{
+                  type: 'wordcloud',
+                  data: data
+              }],
+              title: {
+                  text: ''
+              }
+          });
+        </script>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- FOOTER -->
