@@ -1,11 +1,45 @@
-# STATIC
+# About
 
-**This directory is not required, you can delete it if you don't want to use it.**
+This project is part of the source of [The Apache ECharts Official Website](https://echarts.apache.org/). See [echarts-website](https://github.com/apache/echarts-website) for more details of the building process.
 
-This directory contains your static files.
-Each file inside this directory is mapped to `/`.
-Thus you'd want to delete this README.md before deploying to production.
+## Preview on GitHub Pages
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+https://apache.github.io/echarts-handbook
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).
+## Init
+
+```bash
+npm install
+```
+
+## Dev
+
+```bash
+npm run dev
+```
+
+Open in browser: http://localhost:3000/echarts-handbook/dist/
+
+## Deploy
+
+### Deploy to local dist folder
+
+```bash
+npm run build:local
+```
+
+### Deploy to local echarts website
+
+```bash
+npm run build:localsite
+```
+
+### Deploy to asf
+
+```bash
+npm run build:asf
+```
+
+## Writing
+
+https://apache.github.io/echarts-handbook/en/meta/edit-guide/
