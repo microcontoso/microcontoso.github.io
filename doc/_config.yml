@@ -1,0 +1,20 @@
+title: Mini Contoso
+description: An open project
+theme: "just-the-docs"
+color_scheme: contoso
+# logo: "/assets/images/logo.png"
+url: 'https://minicontosodoc.github.io'
+
+# aux_links:
+#  "Template Repository": "https://github.com/just-the-docs/just-the-docs-template"
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "Copyright &copy; 2024"
+
+# Google Analytics Tracking (optional)
+# e.g, UA-1234567-89
+ga_tracking: G-0DXTH3QCBK
+ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
