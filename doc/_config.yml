@@ -4,7 +4,7 @@ theme: "just-the-docs"
 color_scheme: contoso
 # logo: "/assets/images/logo.png"
 url: 'https://microcontoso.github.io'
-repository: doc
+repository: microcontoso.github.io/doc
 
 # aux_links:
 #  "Template Repository": "https://github.com/just-the-docs/just-the-docs-template"
