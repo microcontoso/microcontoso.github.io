@@ -5,6 +5,7 @@ color_scheme: contoso
 # logo: "/assets/images/logo.png"
 baseurl: '/doc'
 url: 'https://www.minicontoso.com'
+repository: microcontoso/microcontoso.github.io # for github-metadata
 
 # aux_links:
 #  "Template Repository": "https://github.com/just-the-docs/just-the-docs-template"
